@@ -1,6 +1,6 @@
-# Boilerplate Ruby C++ Extension
+# huffman-tw
 
-If you prefer C checkout the [C boilerplate](https://github.com/ChillerDragon/boilerplate-ruby-c-extension).
+The teeworlds C++ huffman compression code wrapped as a ruby gem 
 
 You need ``make``, ``ruby`` and a C++ compiler installed.
 
@@ -9,6 +9,5 @@ You need ``make``, ``ruby`` and a C++ compiler installed.
     make
     ruby main.rb
 
-Also make sure to checkout the official documentation:
 
-https://jasonroelofs.com/rice/4.x/tutorial.html
+The current implementation is broken. **DO NOT USE THIS!**
