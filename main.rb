@@ -4,4 +4,16 @@ require_relative "huffman_tw"
 
 include HuffmanTw
 
-puts huff_compress("hello world", 2)
+data = "hello world"
+
+puts "input: #{data}"
+
+compressed = huff_compress(data, data.size)
+
+puts "compressed: #{compressed}"
+
+compressed = compressed.pack("C*")
+decompressed = huff_decompress(compressed, compressed.size)
+
+puts "decompressed: #{decompressed}"
+puts "decompressed: #{decompressed.map(&:chr).join('')}"
