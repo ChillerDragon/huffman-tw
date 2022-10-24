@@ -1,0 +1,7 @@
+*.log
+*.o
+*.so
+*.h
+Makefile
+.vscode/
+
