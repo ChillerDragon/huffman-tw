@@ -4,13 +4,40 @@ require_relative "huffman_tw"
 
 include HuffmanTw
 
-data = "hello world"
+##
+# The Huffman class holds compression methods.
 
-puts "input: #{data}"
-compressed = huff_compress(data, data.size)
+class Huffman
+  ##
+  # Compresses given data using the huffman algorithm.
+  #
+  # The +data+ has to be of type +String+
+  #
+  # The returned value will be an +Array+ of +Integers+
+  #
+  # An ArgumentError is raised if the data exceeds the maximum size of 2048
+  def compress(data)
+    if data.class != String
+      raise "Data has to be a string"
+    end
 
-puts "compressed: #{compressed}"
-compressed = compressed.pack("C*")
-decompressed = huff_decompress(compressed, compressed.size)
+    huff_compress(data, data.size)
+  end
 
-puts "decompressed: #{decompressed.map(&:chr).join('')}"
+  ##
+  # Decompresses given data using the huffman algorithm.
+  #
+  # The +data+ has to be an +Array+ of +Inetegers+
+  #
+  # The returned value will be an +Array+ of +Integers+
+  #
+  # An ArgumentError is raised if the data exceeds the maximum size of 2048
+  def decompress(data)
+    if data.class != Array
+      raise "Data has to be an Array of bytes"
+    end
+
+    data = data.pack("C*")
+    huff_decompress(data, data.size)
+  end
+end
