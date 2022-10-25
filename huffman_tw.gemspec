@@ -17,11 +17,11 @@ Gem::Specification.new do |s|
   DESC
   s.authors     = ['ChillerDragon']
   s.email       = 'ChillerDragon@gmail.com'
+  s.extensions  = ['extconf.rb']
   s.files       = FileList[
     'main.rb',
     'huffman_tw.cpp',
-    'teeworlds/huffman.h',
-    'extconf.rb'
+    'teeworlds/huffman.h'
   ]
   s.required_ruby_version = '>= 3.1.2'
   s.add_dependency 'rice', '~> 4.0.4'
