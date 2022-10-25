@@ -56,7 +56,7 @@ Object huff_decompress(const char * pInput, int Size)
 
 extern "C"
 
-void Init_huffman_tw()
+void Init_lib_huffman_tw()
 {
     define_module("HuffmanTw")
         .define_module_function("huff_compress", &huff_compress)

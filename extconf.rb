@@ -1,5 +1,5 @@
 require 'rubygems'
 require 'mkmf-rice'
 
-create_makefile 'huffman_tw'
+create_makefile 'lib_huffman_tw'
 

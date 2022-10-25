@@ -19,8 +19,8 @@ Gem::Specification.new do |s|
   s.email       = 'ChillerDragon@gmail.com'
   s.extensions  = ['extconf.rb']
   s.files       = FileList[
-    'main.rb',
-    'huffman_tw.cpp',
+    'lib/huffman_tw.rb',
+    'lib_huffman_tw.cpp',
     'teeworlds/huffman.h'
   ]
   s.required_ruby_version = '>= 3.1.2'
