@@ -24,7 +24,7 @@ Takes a Array or Inetegers as argument. It will then pack it as a ``unsigned cha
 ## Use the library
 
 ```ruby
-require "huffman-tw"
+require "huffman_tw"
 
 huff = Huffman.new
 data = huff.compress("hello world")

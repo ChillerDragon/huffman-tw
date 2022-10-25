@@ -4,4 +4,6 @@
 *.h
 Makefile
 .vscode/
+Gemfile.lock
+*.gem
 
