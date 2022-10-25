@@ -10,8 +10,8 @@ Object huff_compress(const char * pInput, int Size)
     CHuffman Huffman;
     Huffman.Init();
     unsigned char aOutput[2048];
-    Huffman.Compress(pInput, Size, aOutput, sizeof(aOutput));
-    Array out(aOutput, aOutput + Size);
+    int CompressedSize = Huffman.Compress(pInput, Size, aOutput, sizeof(aOutput));
+    Array out(aOutput, aOutput + CompressedSize);
     return out;
 }
 
@@ -20,8 +20,8 @@ Object huff_decompress(const char * pInput, int Size)
     CHuffman Huffman;
     Huffman.Init();
     unsigned char aOutput[2048];
-    Huffman.Decompress(pInput, Size, aOutput, sizeof(aOutput));
-    Array out(aOutput, aOutput + Size);
+    int DecompressedSize = Huffman.Decompress(pInput, Size, aOutput, sizeof(aOutput));
+    Array out(aOutput, aOutput + DecompressedSize);
     return out;
 }
 
