@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require "lib_huffman_tw"
+require_relative '../lib_huffman_tw'
 
 include HuffmanTw
 
