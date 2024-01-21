@@ -24,3 +24,6 @@ jobs:
       run: |
         ruby extconf.rb
         make
+    - name: Build gem
+      run: |
+        gem build huffman_tw.gemspec
