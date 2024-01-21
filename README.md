@@ -18,7 +18,7 @@ Takes a String as argument. The String will then be handled as a ``unsigned char
 
 ``Huffman.decompress(data)``
 
-Takes a Array or Inetegers as argument. It will then pack it as a ``unsigned char *`` and return an Array of Integers.
+Takes a Array or Integers as argument. It will then pack it as a ``unsigned char *`` and return an Array of Integers.
 
 ## Use the library
 
