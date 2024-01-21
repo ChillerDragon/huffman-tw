@@ -4,7 +4,7 @@ require 'rake'
 
 Gem::Specification.new do |s|
   s.name        = 'huffman_tw'
-  s.version     = '0.0.1'
+  s.version     = '0.0.2'
   s.summary     = 'The teeworlds C++ huffman compression code wrapped as a ruby gem'
   s.description = <<-DESC
   The teeworlds C++ huffman compression code wrapped as a ruby gem
