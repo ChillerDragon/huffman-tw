@@ -18,7 +18,7 @@ describe '#compress' do
   it 'Should compress 0x00 0x01 correctly' do
     huffman = Huffman.new
     actual = huffman.compress("\x00\x01")
-    expect(actual).to eq([81, 113, 3] )
+    expect(actual).to eq([81, 113, 3])
   end
 end
 
@@ -43,4 +43,3 @@ describe '#decompress' do
     expect(actual).to eq([0, 1])
   end
 end
-

@@ -17,4 +17,3 @@ describe '#decompress' do
     expect(actual).to eq(nil)
   end
 end
-
