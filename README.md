@@ -9,7 +9,6 @@ You need ``make``, ``ruby`` and a C++ compiler installed.
     gem install rice
     ruby extconf.rb
     make
-    ruby main.rb
 
 ## Methods
 
@@ -37,6 +36,13 @@ p data.map(&:chr).join('')
 ```
 [104, 101, 108, 108, 111, 32, 119, 111, 114, 108, 100]
 "hello world"
+```
+
+## Tests
+
+```
+gem install rspec
+rspec
 ```
 
 ## DISCLAIMER
