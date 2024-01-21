@@ -3,12 +3,11 @@
 
 require_relative '../lib_huffman_tw'
 
-include HuffmanTw
-
 ##
 # The Huffman class holds compression methods.
-
 class Huffman
+  include HuffmanTw
+
   ##
   # Compresses given data using the huffman algorithm.
   #
