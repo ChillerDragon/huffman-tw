@@ -1,3 +1,4 @@
+// vim: set ts=4 sw=4 et smarttab :
 #include <iostream>
 #include <rice/rice.hpp>
 
