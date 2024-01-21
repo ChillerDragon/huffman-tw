@@ -27,3 +27,7 @@ jobs:
     - name: Build gem
       run: |
         gem build huffman_tw.gemspec
+    - name: Install and run gem
+      run: |
+        gem install ./huffman_tw-*.gem
+        ruby -e 'require "huffman_tw";exit(1) unless Huffman.new.compress("hello") == [174, 149, 19, 92, 9, 87, 194, 22, 41, 110, 0]'
