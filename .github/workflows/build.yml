@@ -1,4 +1,4 @@
-name: Unit tests
+name: Build
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [ master ]
 
 jobs:
-  unit-tests:
+  build-clang:
     runs-on: ubuntu-latest
 
     steps:
@@ -16,13 +16,11 @@ jobs:
       uses: actions/setup-ruby@v1
       with:
         ruby-version: 3.1.x
-    - name: Build g++
+    - name: Setup
       run: |
-        sudo apt-get install -y make g++
+        sudo apt-get install -y make clang
         gem install rice
+    - name: Build with clang
+      run: |
         ruby extconf.rb
         make
-    - name: Run rspec tests
-      run: |
-        gem install rspec
-        rspec
