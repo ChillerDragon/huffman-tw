@@ -1,7 +1,16 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-require_relative '../lib_huffman_tw'
+begin
+  # works for me for both system installed gems
+  # and also for the local dev version
+  require_relative '../lib_huffman_tw'
+rescue
+  # ensures the gem works on systems
+  # where the native extensions end up
+  # in a totally different path than the gems ruby code
+  require 'lib_huffman_tw'
+end
 
 ##
 # The Huffman class holds compression methods.
