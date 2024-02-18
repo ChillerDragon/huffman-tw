@@ -5,7 +5,7 @@ begin
   # works for me for both system installed gems
   # and also for the local dev version
   require_relative '../lib_huffman_tw'
-rescue
+rescue LoadError
   # ensures the gem works on systems
   # where the native extensions end up
   # in a totally different path than the gems ruby code
