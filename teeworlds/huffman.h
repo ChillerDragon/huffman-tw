@@ -3,7 +3,9 @@
 #ifndef ENGINE_SHARED_HUFFMAN_H
 #define ENGINE_SHARED_HUFFMAN_H
 
-void mem_zero(void *block,unsigned size)
+#include <string.h>
+
+inline void mem_zero(void *block,unsigned size)
 {
 	memset(block, 0, size);
 }
