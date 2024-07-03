@@ -22,6 +22,10 @@ Takes a Array or Integers as argument. It will then pack it as a ``unsigned char
 
 ## Use the library
 
+```
+gem install huffman_tw
+```
+
 ```ruby
 require "huffman_tw"
 
