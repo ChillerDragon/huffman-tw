@@ -2,6 +2,7 @@
 
 require_relative '../lib/huffman_tw'
 
+# rubocop:disable Metrics/BlockLength
 describe 'basic' do
   describe '#compress' do
     it 'Should compress ABC correctly' do
@@ -45,3 +46,4 @@ describe 'basic' do
     end
   end
 end
+# rubocop:enable Metrics/BlockLength
